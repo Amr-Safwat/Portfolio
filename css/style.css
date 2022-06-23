@@ -242,8 +242,13 @@ header nav a:hover {
 
 @media (max-width: 767px) {
   .main div h2 span {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 800;
+  }
+
+  .main div h3 {
+    font-size: 1.4em;
+    font-weight: 600;
   }
 }
 
