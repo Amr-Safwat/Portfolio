@@ -48,8 +48,18 @@
   font-size: 2.2em;
   font-weight: 800;
   margin-bottom: 50px;
+  position: relative;
 }
-
+.title::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -40px;
+  height: 2px;
+  width: 80px;
+  background-color: var(--main-color);
+}
 section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -309,7 +319,7 @@ header nav a:hover {
 
 .services .card .info h3 {
   color: var(--main-color);
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: 700;
   margin: 25px 0 20px;
 }
@@ -394,6 +404,11 @@ header nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 0 60px;
   }
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
 }
 
 .contact .card {
