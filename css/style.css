@@ -489,3 +489,29 @@ footer .icons a:hover {
 }
 
 /* Footer */
+@media (max-width: 374px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.main div h2 {
+		font-size: 1.2em;
+	}
+	.main div h2 span {
+		font-size: 1.3em;
+		font-weight: 900;
+	}
+	.main div h3 {
+		font-size: 1.2em;
+	}
+	.grid-3 {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 40px;
+	}
+	.contact .container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		padding: 0 40px;
+	}
+}
