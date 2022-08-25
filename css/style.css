@@ -128,11 +128,8 @@ header nav .menu span {
   width: 100%;
   position: absolute;
   border-radius: 1px;
+  cursor: pointer;
   transition: 0.3s;
-}
-
-header nav .menu span:first-child {
-  top: 0;
 }
 
 header nav .menu span:nth-child(2) {
@@ -143,21 +140,21 @@ header nav .menu span:last-child {
   top: 10px;
 }
 
-header nav:hover span:nth-child(2) {
+header nav span.opacity {
   opacity: 0;
 }
 
-header nav:hover span:first-child,
-header nav:hover span:last-child {
+header nav span.change,
+header nav span:last-child.change {
   top: 5px;
   background-color: red;
 }
 
-header nav:hover span:first-child {
+header nav span.rot-1 {
   transform: rotate(45deg);
 }
 
-header nav:hover span:last-child {
+header nav span.rot-2 {
   transform: rotate(-45deg);
 }
 
@@ -193,14 +190,16 @@ header nav a:hover {
     top: calc(100% - 5px);
     right: -20px;
     background-color: white;
-    display: none;
+    height: 0;
+    overflow: hidden;
     box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
     border-radius: 4px;
     transition: 0.3s;
   }
 
-  header nav:hover .links {
-    display: flex;
+  header nav .fill-hei {
+    height: 144.8px;
+    overflow: visible;
   }
 
   header nav .links::before {
