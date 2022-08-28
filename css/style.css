@@ -199,7 +199,7 @@ header nav a:hover {
 
   header nav .fill-hei {
     height: 310%;
-    overflow: visible;
+    overflow: hidden;
   }
 
   header nav .links::before {
