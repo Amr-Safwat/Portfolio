@@ -10,4 +10,24 @@ icon.onclick = function () {
 	spans[0].classList.toggle('rot-1');
 	spans[2].classList.toggle('rot-2');
 };
-console.log(ul)
+
+// Project section
+let btn = document.getElementsByClassName('main-btn');
+let cards = document.querySelectorAll('.projects .card');
+
+btn[1].addEventListener('click', () => {
+	if (btn[1].innerHTML === 'More') {
+		btn[1].innerHTML = 'Less';
+	} else {
+		btn[1].innerHTML = 'More';
+	}
+	for (let i = 6; i <= cards.length; i++) {
+		cards[i].classList.toggle('show');
+	}
+});
+
+for (let i = 6; i <= cards.length; i++) {
+	cards[i].style.display = 'none';
+}
+// Project section
+console.log(cards[7]);

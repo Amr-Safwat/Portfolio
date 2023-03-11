@@ -355,6 +355,10 @@ header nav a:hover {
   transition: 0.3s;
 }
 
+.show {
+  display: block !important;
+}
+
 .projects .card:hover {
   transform: scale(1.1);
 }
