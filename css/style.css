@@ -4,6 +4,7 @@
 :root {
   --main-color: #0c8d7e;
   --alt-color: #11b8a5;
+  --section-color: #333;
 }
 
 * {
@@ -398,7 +399,7 @@ header nav a:hover {
 /* Services */
 /* Projects */
 .projects {
-  background-color: #333;
+  background-color: var(--section-color);
 }
 
 .projects .card {
@@ -521,7 +522,7 @@ header nav a:hover {
 /* Contact */
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: var(--section-color);
   color: white;
   display: flex;
   justify-content: space-between;
