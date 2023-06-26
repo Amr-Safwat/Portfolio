@@ -11,6 +11,22 @@ icon.onclick = function () {
 	spans[2].classList.toggle('rot-2');
 };
 
+
+// Landing
+var i = 0;
+var txt = 'Front-End Developer';
+var speed = 80;
+
+function typeWriter() {
+	if (i < txt.length) {
+		document.getElementById('demo').innerHTML += txt.charAt(i);
+		i++;
+		setTimeout(typeWriter, speed);
+	}
+}
+typeWriter()
+// Landing
+
 // Project section
 let btn = document.getElementsByClassName('main-btn');
 let cards = document.querySelectorAll('.projects .card');
