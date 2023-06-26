@@ -203,7 +203,7 @@ header nav a:hover {
     flex-direction: column;
     position: absolute;
     top: calc(100% - 5px);
-    right: -20px;
+    right: -40px;
     background-color: white;
     height: 0;
     overflow: hidden;
@@ -213,7 +213,7 @@ header nav a:hover {
   }
 
   header nav .fill-hei {
-    height: 310%;
+    height: 214px;
     overflow: hidden;
   }
 
