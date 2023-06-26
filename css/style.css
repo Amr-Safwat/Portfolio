@@ -125,12 +125,8 @@ header .logo {
   font-weight: 700;
 }
 
-header nav {
-  position: relative;
-}
-
 /* menu icon */
-header nav .menu {
+header .menu {
   width: 16px;
   height: 12px;
   position: relative;
@@ -138,7 +134,7 @@ header nav .menu {
   display: none;
 }
 
-header nav .menu span {
+header .menu span {
   background-color: var(--main-color);
   height: 2px;
   width: 100%;
@@ -148,40 +144,40 @@ header nav .menu span {
   transition: 0.3s;
 }
 
-header nav .menu span:nth-child(2) {
+header .menu span:nth-child(2) {
   top: 5px;
 }
 
-header nav .menu span:last-child {
+header .menu span:last-child {
   top: 10px;
 }
 
-header nav span.opacity {
+header span.opacity {
   opacity: 0;
 }
 
-header nav span.change,
-header nav span:last-child.change {
+header span.change,
+header span:last-child.change {
   top: 5px;
   background-color: red;
 }
 
-header nav span.rot-1 {
+header span.rot-1 {
   transform: rotate(45deg);
 }
 
-header nav span.rot-2 {
+header span.rot-2 {
   transform: rotate(-45deg);
 }
 
 /* menu icon */
 
-header nav .links {
+header .links {
   display: flex;
   z-index: 2;
 }
 
-header nav .links a {
+header .links a {
   text-decoration: none;
   color: var(--main-color);
   font-size: 1.1em;
@@ -191,34 +187,35 @@ header nav .links a {
   transition: 0.3s;
 }
 
-header nav a:hover {
+header a:hover {
   background-color: #0c8d7e20;
 }
 
 @media (max-width: 767px) {
-  header nav .menu {
+  header .menu {
     display: block;
   }
 
-  header nav .links {
+  header .links {
     flex-direction: column;
     position: absolute;
     top: calc(100% - 5px);
-    right: -40px;
+    right: 0;
     background-color: white;
     height: 0;
+    width: 100%;
     overflow: hidden;
     box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
     border-radius: 4px;
     transition: 0.3s;
   }
 
-  header nav .fill-hei {
+  header .fill-hei {
     height: 214px;
     overflow: hidden;
   }
 
-  header nav .links::before {
+  header .links::before {
     content: '';
     position: absolute;
     top: -20px;
@@ -228,12 +225,12 @@ header nav a:hover {
     border-color: transparent transparent white transparent;
   }
 
-  header nav .links a {
-    padding: 15px 60px;
+  header .links a {
+    padding: 15px 40px;
     display: block;
   }
 
-  header nav .links a:not(:last-child) {
+  header .links a:not(:last-child) {
     border-bottom: 1px solid #f0f0f0;
   }
 }

@@ -1,5 +1,5 @@
 let icon = document.querySelector('.menu');
-let ul = document.querySelector('nav .links');
+let ul = document.querySelector('.links');
 let spans = document.querySelectorAll('.menu span');
 
 icon.onclick = function () {
@@ -11,6 +11,38 @@ icon.onclick = function () {
 	spans[2].classList.toggle('rot-2');
 };
 
+ul.onclick = function () {
+	ul.classList.remove('fill-hei');
+	spans[0].classList.remove('change');
+	spans[1].classList.remove('opacity');
+	spans[2].classList.remove('change');
+	spans[0].classList.remove('rot-1');
+	spans[2].classList.remove('rot-2');
+}
+document.body.addEventListener('click', function (e) {
+	if (
+		e.target.classList.contains('menu') ||
+		e.target.classList.contains('change') ||
+		e.target.classList.contains('opacity')
+	) {
+		console.log(e.target);
+	} else {
+		ul.classList.remove('fill-hei');
+		spans[0].classList.remove('change');
+		spans[1].classList.remove('opacity');
+		spans[2].classList.remove('change');
+		spans[0].classList.remove('rot-1');
+		spans[2].classList.remove('rot-2');
+	}
+});
+// document.body.onclick = function () {
+// 		ul.classList.remove('fill-hei');
+// 		spans[0].classList.remove('change');
+// 		spans[1].classList.remove('opacity');
+// 		spans[2].classList.remove('change');
+// 		spans[0].classList.remove('rot-1');
+// 		spans[2].classList.remove('rot-2');
+// }
 
 // Landing
 var i = 0;
