@@ -35,15 +35,6 @@ document.body.addEventListener('click', function (e) {
 		spans[2].classList.remove('rot-2');
 	}
 });
-// document.body.onclick = function () {
-// 		ul.classList.remove('fill-hei');
-// 		spans[0].classList.remove('change');
-// 		spans[1].classList.remove('opacity');
-// 		spans[2].classList.remove('change');
-// 		spans[0].classList.remove('rot-1');
-// 		spans[2].classList.remove('rot-2');
-// }
-
 // Landing
 var i = 0;
 var txt = 'Front-End Developer';
@@ -60,14 +51,14 @@ typeWriter()
 // Landing
 
 // Project section
-let btn = document.getElementsByClassName('main-btn');
+let btn = document.querySelector('.btn');
 let cards = document.querySelectorAll('.projects .card');
 
-btn[1].addEventListener('click', () => {
-	if (btn[1].innerHTML === 'More') {
-		btn[1].innerHTML = 'Less';
+btn.addEventListener('click', () => {
+	if (btn.innerHTML === 'More') {
+		btn.innerHTML = 'Less';
 	} else {
-		btn[1].innerHTML = 'More';
+		btn.innerHTML = 'More';
 	}
 	for (let i = 6; i <= cards.length; i++) {
 		cards[i].classList.toggle('show');

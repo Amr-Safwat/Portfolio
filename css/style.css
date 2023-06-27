@@ -16,8 +16,8 @@
 }
 
 .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -328,7 +328,7 @@ header a:hover {
 }
 .about .container {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 .about .container .image {
   width: 350px;
@@ -338,7 +338,7 @@ header a:hover {
   width: 350px;
 }
 .about .container .info {
-  padding: 20px;
+  
 }
 .about .container .info h2 {
   font-size: 36px;
@@ -349,12 +349,19 @@ header a:hover {
   font-size: 20px;
   color: #777;
 }
-@media (max-width: 767px) {
+.about .container .info a {
+  margin: 20px 0 0;
+}
+@media (max-width: 991px) {
   .about .container {
     flex-direction: column;
   }
   .about .container .image {
     margin: 0;
+    width: 335px;
+  }
+  .about .container .image img {
+    width: 335px;
   }
   .about .container .info {
     padding: 20px 0;
