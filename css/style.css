@@ -298,10 +298,6 @@ header a:hover {
   }
 }
 
-.main div .main-btn {
-
-}
-
 .main div .main-btn:hover {
   background-color: var(--alt-color);
   transform: scale(1.1);
@@ -323,9 +319,6 @@ header a:hover {
 
 /* Landing */
 /* About Me */
-.about {
-
-}
 .about .container {
     display: flex;
     align-items: start;
@@ -337,9 +330,7 @@ header a:hover {
 .about .container .image img {
   width: 350px;
 }
-.about .container .info {
-  
-}
+
 .about .container .info h2 {
   font-size: 36px;
   margin-bottom: 15px;
