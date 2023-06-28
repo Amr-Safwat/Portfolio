@@ -346,6 +346,7 @@ header a:hover {
 @media (max-width: 991px) {
   .about .container {
     flex-direction: column;
+    align-items: center;
   }
   .about .container .image {
     margin: 0;
