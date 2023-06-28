@@ -343,14 +343,6 @@ header a:hover {
 .about .container .info a {
   margin: 20px 0 0;
 }
-@media (max-width: 350px) {
-  .about .container .image {
-    width: 313px;
-  }
-  .about .container .image img {
-    width: 313px;
-  }
-}
 @media (max-width: 991px) {
   .about .container {
     flex-direction: column;
@@ -365,6 +357,14 @@ header a:hover {
   .about .container .info {
     padding: 20px 0;
     text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .about .container .image {
+    width: 313px;
+  }
+  .about .container .image img {
+    width: 313px;
   }
 }
 /* About Me */
