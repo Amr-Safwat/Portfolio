@@ -224,13 +224,13 @@ header a:hover {
 		height: 0;
 		width: 100%;
 		overflow: hidden;
-		border-top: 1px solid #ccc;
 		box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
 		transition: 0.3s;
 	}
 
 	header .fill-hei {
 		height: 214px;
+		border-top: 1px solid #ccc;
 		overflow: hidden;
 	}
 
@@ -323,6 +323,9 @@ header a:hover {
 		font-size: 1.4em;
 		font-weight: 800;
 	}
+  .main div h2 span::before {
+    height: 35px;
+  }
 	.main div h3 {
 		font-size: 1.4em;
 		font-weight: 600;
