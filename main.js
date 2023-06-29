@@ -25,7 +25,7 @@ document.body.addEventListener('click', function (e) {
 		e.target.classList.contains('change') ||
 		e.target.classList.contains('opacity')
 	) {
-		console.log(e.target);
+		
 	} else {
 		ul.classList.remove('fill-hei');
 		spans[0].classList.remove('change');
@@ -35,6 +35,7 @@ document.body.addEventListener('click', function (e) {
 		spans[2].classList.remove('rot-2');
 	}
 });
+
 // Landing
 var i = 0;
 var txt = 'Front-End Developer';
@@ -60,13 +61,12 @@ btn.addEventListener('click', () => {
 	} else {
 		btn.innerHTML = 'More';
 	}
-	for (let i = 6; i <= cards.length; i++) {
+	for (let i = 6; i < cards.length; i++) {
 		cards[i].classList.toggle('show');
 	}
 });
 
-for (let i = 6; i <= cards.length; i++) {
+for (let i = 6; i < cards.length; i++) {
 	cards[i].style.display = 'none';
 }
 // Project section
-console.log(cards[7]);
