@@ -118,6 +118,9 @@ section {
 	transition: 0.3s;
 }
 
+.card:hover {
+	transform: translateY(-10px);
+}
 /* Components */
 
 /* Header */
@@ -414,10 +417,6 @@ header a:hover {
 	transition: 0.3s;
 }
 
-.services .card:hover {
-	transform: scale(1.1);
-}
-
 .services .card .icon {
 	color: var(--main-color);
 	font-size: 8em;
@@ -450,10 +449,6 @@ header a:hover {
 
 .show {
 	display: block !important;
-}
-
-.projects .card:hover {
-	transform: scale(1.1);
 }
 
 .projects .card .image {
@@ -535,10 +530,6 @@ header a:hover {
 	text-align: center;
 	padding: 20px 0;
 	transition: 0.3s;
-}
-
-.contact .card:hover {
-	transform: scale(1.1);
 }
 
 .contact .card .icon {
