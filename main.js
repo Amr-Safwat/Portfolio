@@ -39,7 +39,7 @@ document.body.addEventListener('click', function (e) {
 // Landing
 var i = 0;
 var txt = 'Front-End Developer';
-var speed = 80;
+var speed = 110;
 
 function typeWriter() {
 	if (i < txt.length) {

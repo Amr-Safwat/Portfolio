@@ -295,36 +295,53 @@ header a:hover {
 }
 
 .main div h2 span {
-	color: var(--main-color);
 	font-size: 2.5em;
 	font-weight: 600;
 	display: inline-block;
-	margin: 10px 0;
-  position: relative;
-}
-
-.main div h2 span::before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	width: 2px;
-	height: 70px;
-	background-color: var(--main-color);
+	letter-spacing: 3px;
+	line-height: 1.2;
 }
 
 .main div h3 {
 	color: white;
 	font-size: 1.8em;
-	font-weight: 800;
+	font-weight: 600;
 	letter-spacing: 1px;
+	margin-bottom: 25px;
+}
+
+.main div h3 span {
+	color: var(--main-color);
+	margin: 10px 0;
+	position: relative;
+}
+
+.main div h3 span::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -1px;
+	transform: translateY(-50%);
+	width: 2px;
+	height: 40px;
+	background-color: var(--main-color);
+}
+
+.main p {
+	width: 60%;
+	color: #f0f0f0;
 	margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+	.main p {
+		width: 100%;
+	}
 }
 
 @media (max-width: 767px) {
 	.main div h2 span {
-		font-size: 1.4em;
+		font-size: 1.8em;
 		font-weight: 800;
 	}
   .main div h2 span::before {
@@ -333,6 +350,7 @@ header a:hover {
 	.main div h3 {
 		font-size: 1.4em;
 		font-weight: 600;
+		margin-bottom: 20px;
 	}
 }
 
