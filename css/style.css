@@ -325,6 +325,7 @@ header a:hover {
 	width: 2px;
 	height: 40px;
 	background-color: var(--main-color);
+	animation: flash 1.5s infinite linear;
 }
 
 .main p {
@@ -347,8 +348,8 @@ header a:hover {
 		font-size: 1.8em;
 		font-weight: 800;
 	}
-  .main div h2 span::before {
-    height: 35px;
+  .main div h3 span::before {
+    height: 28px;
   }
 	.main div h3 {
 		font-size: 1.3em;
@@ -381,7 +382,15 @@ header a:hover {
 .main div .social-icons a i:hover {
 	transform: scale(1.1);
 }
-
+@keyframes flash {
+	0% {
+		opacity: .1;
+	} 50% {
+		opacity: 1;
+	} 100% {
+		opacity: .1;
+	}
+}
 /* Landing */
 /* About Me */
 .about .container {
