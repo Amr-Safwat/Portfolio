@@ -481,6 +481,7 @@ header a:hover {
 .skills .card {}
 .skills .card:hover {
 	background-color: var(--main-color);
+	color: white;
 	transform: none;
 }
 .skills .card h3 {}
