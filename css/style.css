@@ -104,7 +104,7 @@ section {
 }
 
 .main-btn {
-	background-color: var(--main-color);
+	background-color: var(--alt-color);
 	color: white;
 	text-decoration: none;
 	font-size: 1.1em;
@@ -114,12 +114,13 @@ section {
 	border-radius: 30px;
 	display: inline-block;
 	margin-bottom: 25px;
+	box-shadow: 0 0 10px var(--alt-color);
 	cursor: pointer;
 	transition: .1s;
 }
 
 .main-btn:hover {
-	background-color: var(--alt-color);
+	background-color: var(--main-color);
 	box-shadow: 0 0 10px var(--alt-color);
 }
 
@@ -376,10 +377,6 @@ header a:hover {
 	.main div h2 span {
 		line-height: 1.5;
 	}
-}
-
-.main div .main-btn:hover {
-	background-color: var(--alt-color);
 }
 
 .main div .social-icons a {
