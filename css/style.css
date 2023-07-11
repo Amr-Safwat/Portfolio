@@ -474,10 +474,14 @@ header a:hover {
 .skills {}
 .skills .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
 }
 .skills .card {}
+.skills .card:hover {
+	background-color: var(--main-color);
+	transform: none;
+}
 .skills .card h3 {}
 /* My Skills */
 /* Projects */
