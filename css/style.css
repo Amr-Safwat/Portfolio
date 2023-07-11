@@ -340,6 +340,9 @@ header a:hover {
 }
 
 @media (max-width: 767px) {
+	.main div h2 {
+		font-size: 1.5em;
+	}
 	.main div h2 span {
 		font-size: 1.8em;
 		font-weight: 800;
@@ -348,9 +351,15 @@ header a:hover {
     height: 35px;
   }
 	.main div h3 {
-		font-size: 1.4em;
+		font-size: 1.3em;
 		font-weight: 600;
 		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 370px) {
+	.main div h2 span {
+		line-height: 1.5;
 	}
 }
 
@@ -610,16 +619,6 @@ footer .icons a:hover {
 		padding-right: 20px;
 		margin-left: 0;
 		margin-right: 0;
-	}
-	.main div h2 {
-		font-size: 1.5em;
-	}
-	.main div h2 span {
-		font-size: 1.3em;
-		font-weight: 900;
-	}
-	.main div h3 {
-		font-size: 1.2em;
 	}
 	.grid-3 {
 		display: grid;
