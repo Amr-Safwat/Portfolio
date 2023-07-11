@@ -118,6 +118,15 @@ section {
 	transition: 0.3s;
 }
 
+.card {
+	background-color: white;
+	box-shadow: 0 5px 25px rgba(0 0 0 / 15%);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	transition: 0.3s;
+}
+
 .card:hover {
 	transform: translateY(-10px);
 }
@@ -444,16 +453,6 @@ header a:hover {
 }
 /* About Me */
 /* Services */
-
-.services .card {
-	background-color: white;
-	box-shadow: 0 5px 25px rgba(0 0 0 / 15%);
-	border-radius: 10px;
-	padding: 20px;
-	text-align: center;
-	transition: 0.3s;
-}
-
 .services .card .icon {
 	color: var(--main-color);
 	font-size: 8em;
@@ -471,6 +470,16 @@ header a:hover {
 }
 
 /* Services */
+/* My Skills */
+.skills {}
+.skills .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 20px;
+}
+.skills .card {}
+.skills .card h3 {}
+/* My Skills */
 /* Projects */
 .projects {
 	background-color: var(--section-color);
@@ -481,6 +490,7 @@ header a:hover {
 	border: 1px solid white;
 	border-radius: 10px;
 	overflow: hidden;
+	padding: 0;
 	transition: 0.3s;
 }
 
