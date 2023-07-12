@@ -1,3 +1,4 @@
+// Header
 let icon = document.querySelector('.menu');
 let ul = document.querySelector('.links');
 let spans = document.querySelectorAll('.menu span');
@@ -36,6 +37,18 @@ document.body.addEventListener('click', function (e) {
 	}
 });
 
+  // Add and remove the active class
+let links = document.querySelectorAll('.links a');
+
+links.forEach((link)=> {
+	link.addEventListener('click', () => {
+		links.forEach((link) => {
+			link.classList.remove('active');
+		});
+		link.classList.add('active');
+	});
+})
+// Header
 // Landing
 var i = 0;
 var txt = 'Front-End Developer';

@@ -224,6 +224,7 @@ header .links a {
 	transition: 0.3s;
 }
 
+header a.active,
 header a:hover {
 	/* background-color: #0c8d7e20; */
 	color: var(--main-color);
