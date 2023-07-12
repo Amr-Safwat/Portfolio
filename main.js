@@ -1,9 +1,9 @@
 // Loader
 let loader = document.querySelector('.loading');
 
-// setTimeout(()=>{
-// 	loader.style.display = 'none';
-// },3000);
+setTimeout(()=>{
+	loader.style.display = 'none';
+},3000);
 // Loader
 
 // Header

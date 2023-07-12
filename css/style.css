@@ -156,7 +156,7 @@ section {
 	border-left-color: transparent;
 	border-right-color: transparent;
 	border-radius: 50%;
-	animation: loader 1.5s infinite;
+	animation: loader 1.2s infinite;
 	z-index: 1002;
 }
 .loading img {
