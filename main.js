@@ -1,7 +1,7 @@
 // Loader
 let loader = document.querySelector('.loading');
 
-setInterval(()=>{
+setTimeout(()=>{
 	loader.style.display = 'none';
 },3000);
 // Loader
