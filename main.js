@@ -1,3 +1,11 @@
+// Loader
+let loader = document.querySelector('.loading');
+
+setInterval(()=>{
+	loader.style.display = 'none';
+},3000);
+// Loader
+
 // Header
 let icon = document.querySelector('.menu');
 let ul = document.querySelector('.links');
