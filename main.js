@@ -69,7 +69,7 @@ function typeWriter() {
 		setTimeout(typeWriter, speed);
 	}
 }
-typeWriter()
+setTimeout(typeWriter,3500);
 // Landing
 
 // Project section
