@@ -300,6 +300,7 @@ header div .icon {
 	left: 100%;
 	transform: translateY(-50%);
 	padding: 10px;
+	font-size: 16px;
 } 
 header div .icon:first-child {
 	display: none;
@@ -322,7 +323,7 @@ header div .show-icon {
 		position: absolute;
 		top: 100%;
 		right: 0;
-		background-color: #f0f0f0;
+		background-color: var(--header-color);
 		height: 0;
 		width: 100%;
 		overflow: hidden;
