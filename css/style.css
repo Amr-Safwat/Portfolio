@@ -313,6 +313,9 @@ header div .show-icon {
 	display: inline !important;
 }
 @media (max-width: 767px) {
+	header {
+		height: 55px;
+	}
 	header .menu {
 		display: block;
 		order: 2;
@@ -353,11 +356,11 @@ header div .show-icon {
 	}
 
 	header .links a:not(:last-child) {
-		border-bottom: 1px solid #f1f1f1;
+		border-bottom: 1px solid var(--section-color);
 	}
 	header .icons {
 		order: 1;
-		padding: 20px;
+		padding: 20px 25px;
 	}
 	header .icons .icon {
 		left: 0;
