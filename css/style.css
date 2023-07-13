@@ -5,6 +5,17 @@
 	--main-color: #0c8d7e;
 	--alt-color: #11b8a5;
 	--section-color: #333;
+	--body-color: #fff;
+	--header-color: #f0f0f0;
+	--text-color: #000;
+	--text-card: #a6b5b5;
+}
+
+.dark {
+	--body-color: #121212;
+	--header-color: #262626;
+	--text-color: #fff;
+	--text-card: #a6b5b5;
 }
 
 * {
@@ -13,6 +24,10 @@
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--body-color);
 }
 
 .container {
@@ -46,7 +61,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: #f1f1f1;
+	background-color: var(--body-color);
 }
 
 /* Handle */
@@ -125,7 +140,6 @@ section {
 }
 
 .card {
-	background-color: white;
 	box-shadow: 0 5px 25px rgba(0 0 0 / 15%);
 	border-radius: 10px;
 	padding: 20px;
@@ -138,7 +152,7 @@ section {
 }
 
 .loading {
-	background-color: white;
+	background-color: var(--body-color);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -180,7 +194,7 @@ section {
 
 /* Header */
 header {
-	background-color: #f0f0f0;
+	background-color: var(--header-color);
 	width: 100%;
 	position: fixed;
 	z-index: 100;
@@ -191,6 +205,11 @@ header {
 header .container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+header .container > div {
+	display: flex;
 	align-items: center;
 }
 
@@ -256,7 +275,7 @@ header .links {
 
 header .links a {
 	text-decoration: none;
-	color: black;
+	color: var(--text-color);
 	font-size: 1.1em;
 	font-weight: 600;
 	display: block;
@@ -269,10 +288,33 @@ header a:hover {
 	/* background-color: #0c8d7e20; */
 	color: var(--main-color);
 }
+header .icons {
+	position: relative;
+	padding: 20px;
+	padding-right: 0;
+}
 
+header div .icon {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	padding: 10px;
+} 
+header div .icon:first-child {
+	display: none;
+	color: yellow;
+}
+header div .hid-icon {
+	display: none;
+}
+header div .show-icon {
+	display: inline !important;
+}
 @media (max-width: 767px) {
 	header .menu {
 		display: block;
+		order: 2;
 	}
 
 	header .links {
@@ -311,6 +353,13 @@ header a:hover {
 
 	header .links a:not(:last-child) {
 		border-bottom: 1px solid #f1f1f1;
+	}
+	header .icons {
+		order: 1;
+		padding: 20px;
+	}
+	header .icons .icon {
+		left: 0;
 	}
 }
 
@@ -525,7 +574,9 @@ header a:hover {
 	color: white;
 	transform: none;
 }
-.skills .card h3 {}
+.skills .card h3 {
+	color: var(--text-color);
+}
 /* My Skills */
 /* Projects */
 .projects {
@@ -533,7 +584,7 @@ header a:hover {
 }
 
 .projects .card {
-	background-color: white;
+	background-color: var(--body-color);
 	border: 1px solid white;
 	border-radius: 10px;
 	overflow: hidden;
@@ -574,6 +625,7 @@ header a:hover {
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-top: 10px;
+	color: var(--text-color);
 }
 
 .projects .card .project-title a {
@@ -619,7 +671,6 @@ header a:hover {
 }
 
 .contact .card {
-	background-color: white;
 	box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
 	border-radius: 10px;
 	text-align: center;
@@ -636,6 +687,7 @@ header a:hover {
 	font-size: 1.2em;
 	font-weight: 700;
 	margin: 25px 0 20px;
+	color: var(--text-color);
 }
 
 .contact .card .info p {
