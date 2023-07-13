@@ -66,16 +66,6 @@ links.forEach((link)=> {
 		icons[1].classList.toggle('hid-icon');
 		
 	}
-	
-	// icons[1].onclick = () => {
-	// 	icons[0].style.display = 'inline';
-	// 	icons[1].style.display = 'none';
-	// }
-	// icons[0].onclick = () => {
-	// 	document.body.classList.toggle('dark');
-	// 	icons[1].style.display = 'inline';
-	// 	icons[0].style.display = 'none';
-	// }
   // Dark Mode
 // Header
 // Landing
