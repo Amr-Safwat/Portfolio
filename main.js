@@ -60,12 +60,27 @@ links.forEach((link)=> {
 	let dark = document.querySelector('header .icons');
 	let icons = document.querySelectorAll('header .icon');
 
+	let mode = 'light';
+	
+	if(localStorage.getItem('mode') === 'dark') {
+		document.body.classList.toggle('dark');
+		icons[0].classList.toggle('show-icon');
+		icons[1].classList.toggle('hid-icon');
+	}
 	dark.onclick = () => {
 		document.body.classList.toggle('dark');
 		icons[0].classList.toggle('show-icon');
 		icons[1].classList.toggle('hid-icon');
 		
 	}
+	icons[0].onclick = ()=> {
+		mode = 'light';
+		localStorage.setItem('mode', mode);
+	};
+	icons[1].onclick = ()=> {
+		mode = 'dark';
+		localStorage.setItem('mode', mode);
+	};
   // Dark Mode
 // Header
 // Landing
