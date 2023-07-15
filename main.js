@@ -56,6 +56,7 @@ links.forEach((link)=> {
 		link.classList.add('active');
 	});
 })
+
   // Dark Mode
 	let dark = document.querySelector('header .icons');
 	let icons = document.querySelectorAll('header .icon');
@@ -82,6 +83,24 @@ links.forEach((link)=> {
 		localStorage.setItem('mode', mode);
 	};
   // Dark Mode
+links.forEach((link) => {
+	link.style.color = '#fff';
+});
+icons[1].style.color='#fff';
+window.onscroll = () => {
+	if (window.scrollY > 200) {
+		document.querySelector('header').style.backgroundColor =
+			'var(--header-color)';
+		links.forEach((link) => {
+			link.style.color = 'var(--text-color)';
+		});
+	} else {
+		document.querySelector('header').style.backgroundColor = '';
+		links.forEach((link) => {
+			link.style.color = '#fff';
+		});
+	}
+};
 // Header
 // Landing
 var i = 0;

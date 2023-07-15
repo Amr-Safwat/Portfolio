@@ -194,12 +194,12 @@ section {
 
 /* Header */
 header {
-	background-color: var(--header-color);
 	width: 100%;
 	position: fixed;
 	z-index: 100;
 	box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
 	/* min-height: 53px; */
+	transition: .3s;
 }
 
 header .container {
@@ -219,6 +219,7 @@ header .logo {
 	color: var(--main-color);
 	font-size: 1.8em;
 	font-weight: 700;
+	padding: 15px 0;
 }
 
 /* menu icon */
@@ -226,7 +227,7 @@ header .menu {
 	width: 16px;
 	height: 12px;
 	position: relative;
-	margin: 20px 0;
+	margin: 20px 10px;
 	display: none;
 }
 
@@ -292,6 +293,7 @@ header .icons {
 	position: relative;
 	padding: 20px;
 	padding-right: 0;
+	cursor: pointer;
 }
 
 header div .icon {
@@ -313,9 +315,6 @@ header div .show-icon {
 	display: inline !important;
 }
 @media (max-width: 767px) {
-	header {
-		height: 55px;
-	}
 	header .menu {
 		display: block;
 		order: 2;
@@ -353,6 +352,7 @@ header div .show-icon {
 	header .links a {
 		padding: 15px 30px;
 		display: block;
+		color: black !important;
 	}
 
 	header .links a:not(:last-child) {
@@ -360,7 +360,7 @@ header div .show-icon {
 	}
 	header .icons {
 		order: 1;
-		padding: 20px 25px;
+		padding: 20px;
 	}
 	header .icons .icon {
 		left: 0;
