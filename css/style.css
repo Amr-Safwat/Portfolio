@@ -11,7 +11,12 @@
 	--text-card: #a6b5b5;
 }
 
-/* x */
+.dark {
+	--body-color: #121212;
+	--header-color: #262626;
+	--text-color: #fff;
+	--text-card: #a6b5b5;
+}
 
 * {
 	font-family: 'Poppins', sans-serif;
@@ -575,6 +580,9 @@ header div .show-icon {
 }
 .skills .card h3 {
 	color: var(--text-color);
+}
+.skills .card:hover h3 {
+	color: white;
 }
 /* My Skills */
 /* Projects */
