@@ -506,6 +506,7 @@ header div .show-icon {
 }
 .about .container .image img {
 	width: 350px;
+	border-radius: 30px;
 }
 
 .about .container .info h2 {
