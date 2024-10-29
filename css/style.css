@@ -570,7 +570,7 @@ header div .show-icon {
 .skills {}
 .skills .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
 }
 .skills .card {}
@@ -589,6 +589,11 @@ header div .show-icon {
 }
 .skills .card:hover h3 {
 	color: white;
+}
+@media (max-width: 700px) {
+	.skills .container {
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	}
 }
 /* My Skills */
 /* Projects */
