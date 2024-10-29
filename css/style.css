@@ -570,7 +570,7 @@ header div .show-icon {
 .skills {}
 .skills .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 	gap: 20px;
 }
 .skills .card {}
@@ -578,6 +578,11 @@ header div .show-icon {
 	background-color: var(--main-color);
 	color: white;
 	transform: none;
+}
+.skills .card i {
+	color: white;
+    font-size: 50px;
+	color: var(--text-card);
 }
 .skills .card h3 {
 	color: var(--text-color);
